@@ -1,3 +1,5 @@
+using Volo.Blogging.Admin;
+using Volo.Blogging;
 using System.IO;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -54,6 +56,8 @@ using Volo.Abp.Studio.Client.AspNetCore;
 namespace BookStore.Web;
 
 [DependsOn(
+    typeof(BloggingAdminWebModule),
+    typeof(BloggingWebModule),
     typeof(BookStoreHttpApiModule),
     typeof(BookStoreApplicationModule),
     typeof(BookStoreEntityFrameworkCoreModule),
@@ -204,6 +208,8 @@ public class BookStoreWebModule : AbpModule
             if (hostingEnvironment.IsDevelopment())
             {
                 options.FileSets.ReplaceEmbeddedByPhysical<BookStoreDomainSharedModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}BookStore.Domain.Shared", Path.DirectorySeparatorChar)));
+                options.FileSets.ReplaceEmbeddedByPhysical<BloggingWebModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}modules{0}Volo.Blogging{0}src{0}Volo.Blogging.Web", Path.DirectorySeparatorChar)));
+                options.FileSets.ReplaceEmbeddedByPhysical<BloggingAdminWebModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}..{0}modules{0}Volo.Blogging{0}src{0}Volo.Blogging.Admin.Web", Path.DirectorySeparatorChar)));
                 options.FileSets.ReplaceEmbeddedByPhysical<BookStoreDomainModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}BookStore.Domain", Path.DirectorySeparatorChar)));
                 options.FileSets.ReplaceEmbeddedByPhysical<BookStoreApplicationContractsModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}BookStore.Application.Contracts", Path.DirectorySeparatorChar)));
                 options.FileSets.ReplaceEmbeddedByPhysical<BookStoreApplicationModule>(Path.Combine(hostingEnvironment.ContentRootPath, string.Format("..{0}BookStore.Application", Path.DirectorySeparatorChar)));

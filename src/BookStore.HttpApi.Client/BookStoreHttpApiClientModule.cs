@@ -1,4 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+using System.IO;
+using Volo.Blogging.Admin;
+using Volo.Blogging;
+using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Account;
 using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement;
@@ -11,6 +14,8 @@ using Volo.Abp.TenantManagement;
 namespace BookStore;
 
 [DependsOn(
+    typeof(BloggingAdminHttpApiClientModule),
+    typeof(BloggingHttpApiClientModule),
     typeof(BookStoreApplicationContractsModule),
     typeof(AbpPermissionManagementHttpApiClientModule),
     typeof(AbpFeatureManagementHttpApiClientModule),

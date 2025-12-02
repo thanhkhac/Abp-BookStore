@@ -1,3 +1,6 @@
+using System.IO;
+using Volo.Abp.VirtualFileSystem;
+using Volo.Blogging.EntityFrameworkCore;
 using System;
 using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Uow;
@@ -18,6 +21,7 @@ using Volo.Abp.Studio;
 namespace BookStore.EntityFrameworkCore;
 
 [DependsOn(
+    typeof(BloggingEntityFrameworkCoreModule),
     typeof(BookStoreDomainModule),
     typeof(AbpPermissionManagementEntityFrameworkCoreModule),
     typeof(AbpSettingManagementEntityFrameworkCoreModule),

@@ -1,4 +1,8 @@
-﻿using Localization.Resources.AbpUi;
+using System.IO;
+using Volo.Abp.VirtualFileSystem;
+using Volo.Blogging.Admin;
+using Volo.Blogging;
+using Localization.Resources.AbpUi;
 using BookStore.Localization;
 using Volo.Abp.Account;
 using Volo.Abp.SettingManagement;
@@ -12,6 +16,8 @@ using Volo.Abp.TenantManagement;
 namespace BookStore;
 
  [DependsOn(
+    typeof(BloggingAdminHttpApiModule),
+    typeof(BloggingHttpApiModule),
     typeof(BookStoreApplicationContractsModule),
     typeof(AbpPermissionManagementHttpApiModule),
     typeof(AbpSettingManagementHttpApiModule),

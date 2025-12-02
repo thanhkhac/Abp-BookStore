@@ -1,3 +1,5 @@
+using System.IO;
+using Volo.Blogging;
 using BookStore.Localization;
 using Volo.Abp.AuditLogging;
 using Volo.Abp.BackgroundJobs;
@@ -17,6 +19,7 @@ using Volo.Abp.TenantManagement;
 namespace BookStore;
 
 [DependsOn(
+    typeof(BloggingDomainSharedModule),
     typeof(AbpAuditLoggingDomainSharedModule),
     typeof(AbpBackgroundJobsDomainSharedModule),
     typeof(AbpFeatureManagementDomainSharedModule),

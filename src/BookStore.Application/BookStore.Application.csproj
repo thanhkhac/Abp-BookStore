@@ -1,18 +1,16 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\..\common.props" />
-
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <RootNamespace>BookStore</RootNamespace>
   </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\BookStore.Domain\BookStore.Domain.csproj" />
     <ProjectReference Include="..\BookStore.Application.Contracts\BookStore.Application.Contracts.csproj" />
+    <ProjectReference Include="../../modules/Volo.Blogging/src/Volo.Blogging.Admin.Application/Volo.Blogging.Admin.Application.csproj" />
+    <ProjectReference Include="../../modules/Volo.Blogging/src/Volo.Blogging.Application/Volo.Blogging.Application.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="10.0.0" />
     <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="10.0.0" />
@@ -21,5 +19,4 @@
     <PackageReference Include="Volo.Abp.Identity.Application" Version="10.0.0" />
     <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="10.0.0" />
   </ItemGroup>
-
 </Project>

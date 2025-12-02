@@ -1,3 +1,4 @@
+using Volo.Blogging.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
@@ -66,6 +67,8 @@ public class BookStoreDbContext :
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
+
+        builder.ConfigureBlogging();
 
         /* Include modules to your migration db context */
 

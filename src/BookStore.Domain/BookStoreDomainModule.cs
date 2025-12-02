@@ -1,3 +1,6 @@
+using System.IO;
+using Volo.Abp.VirtualFileSystem;
+using Volo.Blogging;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using BookStore.Localization;
@@ -21,6 +24,7 @@ using Volo.Abp.TenantManagement;
 namespace BookStore;
 
 [DependsOn(
+    typeof(BloggingDomainModule),
     typeof(BookStoreDomainSharedModule),
     typeof(AbpAuditLoggingDomainModule),
     typeof(AbpCachingModule),

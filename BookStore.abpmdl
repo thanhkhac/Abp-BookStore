@@ -40,6 +40,10 @@
       "version": "10.0.0",
       "isInstalled": true,
       "creationTime": "12/02/2025 06:42:53 +00:00"
+    },
+    "Volo.Blogging": {
+      "isInstalled": true,
+      "path": "modules/Volo.Blogging/Volo.Blogging.abpmdl"
     }
   },
   "folders": {
