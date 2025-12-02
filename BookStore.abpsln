@@ -1,6 +1,6 @@
 {
-  "id": "3ac0a608-6ffe-4777-b875-2e211bef67cc",
-  "creationTime": "12/02/2025 03:13:30 +00:00",
+  "id": "ef757874-0eb9-4b36-a99f-b4dfcf969bc1",
+  "creationTime": "12/02/2025 06:42:53 +00:00",
   "template": "app",
   "versions": {
     "AbpFramework": "10.0.0",
@@ -27,14 +27,14 @@
   "creatingStudioConfiguration": {
     "template": "app",
     "createdAbpStudioVersion": "2.0.2",
-    "creationTool": "ABP Studio CLI",
+    "creationTool": "ABP Studio UI",
     "tiered": "false",
     "runInstallLibs": "true",
     "useLocalReferences": "false",
     "multiTenancy": "true",
     "includeTests": "true",
     "kubernetesConfiguration": "false",
-    "uiFramework": "no-ui",
+    "uiFramework": "mvc",
     "mobileFramework": "none",
     "distributedEventBus": "none",
     "databaseProvider": "ef",
@@ -42,15 +42,15 @@
     "databaseManagementSystem": "sqlserver",
     "separateTenantSchema": "false",
     "createInitialMigration": "true",
-    "theme": "leptonx-lite",
+    "theme": "basic",
     "themeStyle": "",
     "themeMenuPlacement": "",
     "mobileFramework": "none",
     "publicWebsite": "false",
-    "socialLogin": "true",
+    "socialLogin": "false",
     "sampleCrudPage": "false",
     "selectedLanguages": ["English", "Arabic", "Chinese (Simplified)", "Chinese (Traditional)", "Czech", "English (United Kingdom)", "Finnish", "French", "German (Germany)", "Hindi ", "Hungarian", "Icelandic", "Italian", "Portuguese (Brazil)", "Romanian (Romania)", "Russian", "Slovak", "Spanish", "Swedish", "Turkish", ],
     "defaultLanguage": "English",
-    "createCommand": "abp new BookStore -t app --database-provider ef --database-management-system sqlserver --theme leptonx-lite --without-cms-kit --dont-run-bundling -no-file-management"
+    "createCommand": "abp new BookStore -t app --ui-framework mvc --database-provider ef --database-management-system sqlserver --theme basic --without-cms-kit --dont-run-bundling --no-social-logins -no-gdpr -no-openiddict-admin-ui -no-audit-logging -no-file-management -no-language-management -no-text-template-management"
   }
 }

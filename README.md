@@ -13,6 +13,7 @@ This is a layered startup solution based on [Domain Driven Design (DDD)](https:/
 
 The solution comes with a default configuration that works out of the box. However, you may consider to change the following configuration before running your solution:
 
+* Check the `ConnectionStrings` in `appsettings.json` files under the `BookStore.Web` and `BookStore.DbMigrator` projects and change it if you need.
 
 ### Before running the application
 
@@ -26,10 +27,10 @@ In the production environment, you need to use a production signing certificate.
 To generate a signing certificate, you can use the following command:
 
 ```bash
-dotnet dev-certs https -v -ep openiddict.pfx -p 860ccce2-fabd-4f2b-8e9a-1bfa2280e973
+dotnet dev-certs https -v -ep openiddict.pfx -p 6f7175d5-7efe-4892-abef-be5f924a92a9
 ```
 
-> `860ccce2-fabd-4f2b-8e9a-1bfa2280e973` is the password of the certificate, you can change it to any password you want.
+> `6f7175d5-7efe-4892-abef-be5f924a92a9` is the password of the certificate, you can change it to any password you want.
 
 It is recommended to use **two** RSA certificates, distinct from the certificate(s) used for HTTPS: one for encryption, one for signing.
 
@@ -42,6 +43,7 @@ For more information, please refer to: [OpenIddict Certificate Configuration](ht
 This is a layered monolith application that consists of the following applications:
 
 * `BookStore.DbMigrator`: A console application which applies the migrations and also seeds the initial data. It is useful on development as well as on production environment.
+* `BookStore.Web`: ASP.NET Core MVC / Razor Pages application that is the essential web application of the solution.
 
 
 ## Deploying the application

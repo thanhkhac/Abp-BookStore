@@ -261,7 +261,7 @@ src/BookStore.Web.Public/Logs/*
 src/BookStore.Web.Public.Host/Logs/*
 src/BookStore.AuthServer/Logs/*
 src/BookStore.HttpApi.Host/Logs/*
-src/BookStore.HttpApi.Host/Logs/*
+src/BookStore.HttpApi.HostWithIds/Logs/*
 src/BookStore.DbMigrator/Logs/*
 src/BookStore.Blazor.Server/Logs/*
 src/BookStore.Blazor.Server.Tiered/Logs/*

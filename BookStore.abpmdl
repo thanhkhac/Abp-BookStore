@@ -1,45 +1,45 @@
 {
   "template": "app",
   "imports": {
-    "Volo.Abp.LeptonXLiteTheme": {
-      "version": "5.0.0",
+    "Volo.Abp.BasicTheme": {
+      "version": "10.0.0",
       "isInstalled": true,
-      "creationTime": "12/02/2025 03:13:30 +00:00"
+      "creationTime": "12/02/2025 06:42:53 +00:00"
     },
     "Volo.Abp.Account": {
       "version": "10.0.0",
       "isInstalled": true,
-      "creationTime": "12/02/2025 03:13:30 +00:00"
+      "creationTime": "12/02/2025 06:42:53 +00:00"
     },
     "Volo.Abp.OpenIddict": {
       "version": "10.0.0",
       "isInstalled": true,
-      "creationTime": "12/02/2025 03:13:30 +00:00"
+      "creationTime": "12/02/2025 06:42:53 +00:00"
     },
     "Volo.Abp.Identity": {
       "version": "10.0.0",
       "isInstalled": true,
-      "creationTime": "12/02/2025 03:13:30 +00:00"
+      "creationTime": "12/02/2025 06:42:53 +00:00"
     },
     "Volo.Abp.TenantManagement": {
       "version": "10.0.0",
       "isInstalled": true,
-      "creationTime": "12/02/2025 03:13:30 +00:00"
+      "creationTime": "12/02/2025 06:42:53 +00:00"
     },
     "Volo.Abp.SettingManagement": {
       "version": "10.0.0",
       "isInstalled": true,
-      "creationTime": "12/02/2025 03:13:30 +00:00"
+      "creationTime": "12/02/2025 06:42:53 +00:00"
     },
     "Volo.Abp.PermissionManagement": {
       "version": "10.0.0",
       "isInstalled": true,
-      "creationTime": "12/02/2025 03:13:30 +00:00"
+      "creationTime": "12/02/2025 06:42:53 +00:00"
     },
     "Volo.Abp.FeatureManagement": {
       "version": "10.0.0",
       "isInstalled": true,
-      "creationTime": "12/02/2025 03:13:30 +00:00"
+      "creationTime": "12/02/2025 06:42:53 +00:00"
     }
   },
   "folders": {
@@ -73,6 +73,14 @@
       "path": "src/BookStore.HttpApi.Client/BookStore.HttpApi.Client.abppkg",
       "folder": "src"
     },
+    "BookStore.Web": {
+      "path": "src/BookStore.Web/BookStore.Web.abppkg",
+      "folder": "src"
+    },
+    "BookStore.Web.Tests": {
+      "path": "test/BookStore.Web.Tests/BookStore.Web.Tests.abppkg",
+      "folder": "test"
+    },
     "BookStore.EntityFrameworkCore.Tests": {
       "path": "test/BookStore.EntityFrameworkCore.Tests/BookStore.EntityFrameworkCore.Tests.abppkg",
       "folder": "test"
@@ -95,10 +103,6 @@
     },
     "BookStore.DbMigrator": {
       "path": "src/BookStore.DbMigrator/BookStore.DbMigrator.abppkg",
-      "folder": "src"
-    },
-    "BookStore.HttpApi.Host": {
-      "path": "src/BookStore.HttpApi.Host/BookStore.HttpApi.Host.abppkg",
       "folder": "src"
     },
     "BookStore.Domain": {

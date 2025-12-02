@@ -1,14 +1,14 @@
 ﻿{
   "applications": {
-    "BookStore.HttpApi.Host": {
+    "BookStore.Web": {
       "type": "dotnet-project",
-      "launchUrl": "https://localhost:44359",
-      "path": "../../../src/BookStore.HttpApi.Host/BookStore.HttpApi.Host.csproj",
-      "kubernetesService": ".*-httpapihost$",
+      "launchUrl": "https://localhost:44316",
+      "path": "../../../src/BookStore.Web/BookStore.Web.csproj",
+      "kubernetesService": ".*-web$",
       "healthCheckEndpoint": "/health-status",
       "healthUiEndpoint": "/health-ui",
       "execution": {
-        "order": 4
+        "order": 2
       }
     }
   },
