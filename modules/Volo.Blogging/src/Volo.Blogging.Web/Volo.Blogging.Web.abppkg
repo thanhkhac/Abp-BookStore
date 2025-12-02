@@ -1,8 +1,0 @@
-{
-  "role": "lib.mvc",
-  "npmDependencies": {
-    "@abp/blogging": {
-        "version": ""
-    }
-  }
-}
