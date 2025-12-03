@@ -27,10 +27,10 @@ In the production environment, you need to use a production signing certificate.
 To generate a signing certificate, you can use the following command:
 
 ```bash
-dotnet dev-certs https -v -ep openiddict.pfx -p 226c115c-caff-4e98-bcee-f3ba61d35130
+dotnet dev-certs https -v -ep openiddict.pfx -p e3733c80-2bb1-4695-92d1-c50f2f51515d
 ```
 
-> `226c115c-caff-4e98-bcee-f3ba61d35130` is the password of the certificate, you can change it to any password you want.
+> `e3733c80-2bb1-4695-92d1-c50f2f51515d` is the password of the certificate, you can change it to any password you want.
 
 It is recommended to use **two** RSA certificates, distinct from the certificate(s) used for HTTPS: one for encryption, one for signing.
 

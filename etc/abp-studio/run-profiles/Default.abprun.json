@@ -2,7 +2,7 @@
   "applications": {
     "AbpSolution1.Web": {
       "type": "dotnet-project",
-      "launchUrl": "https://localhost:44335",
+      "launchUrl": "https://localhost:44346",
       "path": "../../../src/AbpSolution1.Web/AbpSolution1.Web.csproj",
       "kubernetesService": ".*-web$",
       "healthCheckEndpoint": "/health-status",
